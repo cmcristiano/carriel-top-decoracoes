@@ -26,7 +26,7 @@ export function HeroSticky() {
   const progressWidth = useTransform(scrollYProgress, [0, 1], ["25%", "100%"]);
 
   return (
-    <section ref={containerRef} id="projetos" className="relative h-[350vh] bg-[#FAFAFA]">
+    <section ref={containerRef} id="projetos" className="relative h-[520vh] bg-[#FAFAFA]">
       <div className="sticky top-0 flex h-screen w-full items-center overflow-hidden pt-20">
         <div className="pointer-events-none absolute inset-y-20 left-1/2 hidden w-px bg-zinc-200 lg:block" />
         <div className="mx-auto grid w-full max-w-7xl items-center gap-8 px-5 py-6 sm:px-8 lg:grid-cols-[0.86fr_1.14fr] lg:gap-16">

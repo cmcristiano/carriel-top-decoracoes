@@ -22,8 +22,8 @@ export const slides: Slide[] = [
     eyebrow: "PORTFÓLIO EXCLUSIVO",
     title: "Cenários Infantis & Temáticos",
     description:
-      "Composições lúdicas com painéis orgânicos, balões desconstruídos e peças que transformam cada idade em memória afetiva.",
-    image: imagePath("carrieltopfestasedecoracoes-20260915-0019.jpg"),
+      "Cores vivas, painéis personalizados e personagens entram em cena para transformar cada idade em memória afetiva.",
+    image: imagePath("carrieltopfestasedecoracoes-20260915-0021.jpg"),
     accent: "pink",
   },
   {
@@ -36,10 +36,10 @@ export const slides: Slide[] = [
   },
   {
     eyebrow: "PORTFÓLIO EXCLUSIVO",
-    title: "Celebrações Intimistas & Chás",
+    title: "Celebrações Intimistas & Baby",
     description:
-      "Chás, revelações e pequenos encontros ganham textura com flores, mobiliário leve e um cuidado preciso com proporções.",
-    image: imagePath("carrieltopfestasedecoracoes-20260915-0010.jpg"),
+      "Chás, revelações e pequenos encontros ganham textura com flores, mobiliário leve e proporções delicadas.",
+    image: imagePath("carrieltopfestasedecoracoes-20260915-0024.jpg"),
     accent: "amber",
   },
   {
@@ -47,8 +47,24 @@ export const slides: Slide[] = [
     title: "Eventos Adultos & Comemorações Especiais",
     description:
       "Ambientações elegantes para aniversários e encontros especiais, equilibrando cor, iluminação e acervo com sofisticação.",
-    image: imagePath("carrieltopfestasedecoracoes-20260915-0006.jpg"),
+    image: imagePath("carrieltopfestasedecoracoes-20260915-0016.jpg"),
+    accent: "cyan",
+  },
+  {
+    eyebrow: "PORTFÓLIO EXCLUSIVO",
+    title: "Bride to Be & Encontros Afetivos",
+    description:
+      "Balões, molduras e paletas suaves criam pontos de foto para celebrar noivas, amigas e histórias que começam.",
+    image: imagePath("carrieltopfestasedecoracoes-20260915-0030.jpg"),
     accent: "pink",
+  },
+  {
+    eyebrow: "PORTFÓLIO EXCLUSIVO",
+    title: "Cenários Naturais & Sofisticados",
+    description:
+      "Mobiliário, folhagens e luz quente constroem ambientes acolhedores para aniversários adultos e recepções especiais.",
+    image: imagePath("carrieltopfestasedecoracoes-20260915-0032.jpg"),
+    accent: "amber",
   },
 ];
 
@@ -89,4 +105,64 @@ export const categories: Category[] = [
     icon: PanelsTopLeft,
     accentClass: "bg-cyan-400",
   },
+];
+
+export type GalleryImage = {
+  title: string;
+  caption: string;
+  image: string;
+  className: string;
+};
+
+export const galleryImages: GalleryImage[] = [
+  {
+    title: "Infantil Tropical",
+    caption: "cores, folhagens e personagens",
+    image: imagePath("carrieltopfestasedecoracoes-20260915-0021.jpg"),
+    className: "md:col-span-5 md:row-span-2",
+  },
+  {
+    title: "Noite de Debutante",
+    caption: "brilho, estrelas e presença",
+    image: imagePath("carrieltopfestasedecoracoes-20260915-0018.jpg"),
+    className: "md:col-span-4 md:row-span-2",
+  },
+  {
+    title: "Mesa Branca",
+    caption: "leveza para receber",
+    image: imagePath("carrieltopfestasedecoracoes-20260915-0016.jpg"),
+    className: "md:col-span-3",
+  },
+  {
+    title: "Baby Neutro",
+    caption: "tons calmos e delicados",
+    image: imagePath("carrieltopfestasedecoracoes-20260915-0024.jpg"),
+    className: "md:col-span-3",
+  },
+  {
+    title: "Circo Encantado",
+    caption: "cenografia lúdica completa",
+    image: imagePath("carrieltopfestasedecoracoes-20260915-0027.jpg"),
+    className: "md:col-span-4",
+  },
+  {
+    title: "Bride to Be",
+    caption: "um cenário para celebrar",
+    image: imagePath("carrieltopfestasedecoracoes-20260915-0030.jpg"),
+    className: "md:col-span-4",
+  },
+  {
+    title: "Painel Floral",
+    caption: "folhagens e luz quente",
+    image: imagePath("carrieltopfestasedecoracoes-20260915-0031.jpg"),
+    className: "md:col-span-4",
+  },
+];
+
+export const detailImages = [
+  imagePath("carrieltopfestasedecoracoes-20260915-0020.jpg"),
+  imagePath("carrieltopfestasedecoracoes-20260915-0022.jpg"),
+  imagePath("carrieltopfestasedecoracoes-20260915-0028.jpg"),
+  imagePath("carrieltopfestasedecoracoes-20260915-0029.jpg"),
+  imagePath("carrieltopfestasedecoracoes-20260915-0033.jpg"),
 ];
