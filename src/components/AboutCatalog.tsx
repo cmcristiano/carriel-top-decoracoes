@@ -96,7 +96,7 @@ export function AboutCatalog() {
                       href={whatsappHref}
                       className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-zinc-900"
                     >
-                      Consultar disponibilidade
+                      {category.action}
                       <ArrowUpRight className="size-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </a>
                   </div>

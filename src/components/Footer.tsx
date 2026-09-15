@@ -1,5 +1,5 @@
 import { ArrowRight, Camera, MessageCircle } from "lucide-react";
-import { whatsappHref } from "../data/content";
+import { instagramHandle, instagramHref, whatsappHref } from "../data/content";
 
 export function Footer() {
   return (
@@ -35,11 +35,11 @@ export function Footer() {
           <div className="flex flex-wrap gap-5">
             <span>Atendimento com horário agendado</span>
             <a
-              href="https://www.instagram.com/carrieltopfestasedecoracoes"
+              href={instagramHref}
               className="inline-flex items-center gap-2 text-zinc-700 hover:text-zinc-950"
             >
               <Camera className="size-4" />
-              @carrieltopfestasedecoracoes
+              {instagramHandle}
             </a>
           </div>
         </div>

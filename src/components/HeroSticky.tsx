@@ -69,14 +69,6 @@ export function HeroSticky() {
 
           <div className="relative min-h-[48vh] lg:min-h-[72vh]">
             <div className="absolute -right-4 top-4 hidden h-52 w-px bg-pink-200 lg:block" />
-            <div className="absolute right-0 top-1/2 hidden -translate-y-1/2 text-[0.65rem] font-semibold uppercase leading-7 tracking-[0.42em] text-zinc-600 2xl:block">
-              <span className="block">Carriel Top</span>
-              <span className="mt-8 block">Festas</span>
-              <span className="block">que</span>
-              <span className="block">inspiram</span>
-              <span className="block">sorrisos</span>
-            </div>
-
             <div className="relative mx-auto aspect-[4/5] max-h-[72vh] w-[min(76vw,520px)] overflow-hidden rounded-[2rem] bg-zinc-100 shadow-2xl shadow-zinc-900/10 lg:mr-20">
               {slides.map((slide, index) => {
                 const start = index / slides.length;

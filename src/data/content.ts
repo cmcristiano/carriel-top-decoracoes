@@ -2,7 +2,10 @@ import type { ComponentType } from "react";
 import { BadgeCheck, PanelsTopLeft, Sparkles } from "lucide-react";
 
 export const whatsappHref =
-  "https://wa.me/?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20Carriel%20Top.";
+  "https://wa.me/5547996122174?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20Carriel%20Top.";
+
+export const instagramHandle = "@carrieltopfestasedecoracoes";
+export const instagramHref = "https://www.instagram.com/carrieltopfestasedecoracoes";
 
 export const imagePath = (fileName: string) => `${import.meta.env.BASE_URL}images/${fileName}`;
 
@@ -52,6 +55,7 @@ export const slides: Slide[] = [
 export type Category = {
   title: string;
   description: string;
+  action: string;
   image: string;
   icon: ComponentType<{ className?: string; strokeWidth?: number }>;
   accentClass: string;
@@ -62,6 +66,7 @@ export const categories: Category[] = [
     title: "Cenografia Infantil & Temática",
     description:
       "Temas infantis, fazendinha, bosque, personagens e composições completas para encantar os pequenos.",
+    action: "Criar uma festa inesquecível",
     image: imagePath("carrieltopfestasedecoracoes-20260915-0001.jpg"),
     icon: Sparkles,
     accentClass: "bg-pink-400",
@@ -70,6 +75,7 @@ export const categories: Category[] = [
     title: "Debutantes (15 Anos) & Noivados",
     description:
       "Projetos com presença cênica, cores marcantes e leitura elegante para celebrar momentos de transição.",
+    action: "Desenhar uma celebração especial",
     image: imagePath("carrieltopfestasedecoracoes-20260915-0018.jpg"),
     icon: BadgeCheck,
     accentClass: "bg-amber-400",
@@ -78,6 +84,7 @@ export const categories: Category[] = [
     title: "Aluguel de Peças & Painéis Personalizados",
     description:
       "Acervo, painéis, mobiliário e detalhes sob medida para compor a base visual da sua festa.",
+    action: "Montar uma composição sob medida",
     image: imagePath("carrieltopfestasedecoracoes-20260915-0016.jpg"),
     icon: PanelsTopLeft,
     accentClass: "bg-cyan-400",
