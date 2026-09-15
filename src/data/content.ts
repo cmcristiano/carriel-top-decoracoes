@@ -6,6 +6,7 @@ export const whatsappHref =
 
 export const instagramHandle = "@carrieltopfestasedecoracoes";
 export const instagramHref = "https://www.instagram.com/carrieltopfestasedecoracoes";
+export const whatsappLabel = "(47) 99612-2174";
 
 export const imagePath = (fileName: string) => `${import.meta.env.BASE_URL}images/${fileName}`;
 

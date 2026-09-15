@@ -1,5 +1,34 @@
-import { ArrowRight, Camera, MessageCircle } from "lucide-react";
-import { instagramHandle, instagramHref, whatsappHref } from "../data/content";
+import { ArrowRight, MessageCircle } from "lucide-react";
+import {
+  instagramHandle,
+  instagramHref,
+  whatsappHref,
+  whatsappLabel,
+} from "../data/content";
+
+function InstagramIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      aria-hidden="true"
+      className={className}
+      fill="none"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        height="17"
+        rx="5"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        width="17"
+        x="3.5"
+        y="3.5"
+      />
+      <circle cx="12" cy="12" r="4.1" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="17.2" cy="6.8" fill="currentColor" r="1.2" />
+    </svg>
+  );
+}
 
 export function Footer() {
   return (
@@ -30,16 +59,23 @@ export function Footer() {
           </a>
         </div>
 
-        <div className="flex flex-col gap-6 border-t border-zinc-200 py-8 text-sm text-zinc-500 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-6 border-t border-zinc-200 py-8 text-sm text-zinc-500 lg:flex-row lg:items-center lg:justify-between">
           <p>© 2026 Carriel Top - Festas & Decorações.</p>
-          <div className="flex flex-wrap gap-5">
-            <span>Atendimento com horário agendado</span>
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
+            <span className="font-medium text-zinc-600">Redes sociais e contato</span>
             <a
               href={instagramHref}
-              className="inline-flex items-center gap-2 text-zinc-700 hover:text-zinc-950"
+              className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 font-semibold text-zinc-800 transition hover:border-pink-200 hover:bg-pink-50 hover:text-pink-600"
             >
-              <Camera className="size-4" />
+              <InstagramIcon className="size-4" />
               {instagramHandle}
+            </a>
+            <a
+              href={whatsappHref}
+              className="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-emerald-50 px-4 py-2 font-semibold text-emerald-700 transition hover:border-emerald-200 hover:bg-emerald-100 hover:text-emerald-800"
+            >
+              <MessageCircle className="size-4" />
+              WhatsApp {whatsappLabel}
             </a>
           </div>
         </div>
